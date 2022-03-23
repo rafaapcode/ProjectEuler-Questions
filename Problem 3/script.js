@@ -1,24 +1,24 @@
-function factorialPrime() {
-    let arr = [];
+function factorialPrime(number) {
+    let maxPrime = -1;
 
-    for (let i = 2; i <= 37; i++) {
-        let ehprimo = true;
-
-        for (let d = 2; d < i; d++) {
-            if (i % d === 0) {
-                ehprimo = false;
-            }
-        };
-
-        if (ehprimo) {
-            arr.push(i);
-        }
-
+    while (number % 2 == 0) {
+        maxPrime = 2;
+        number /= 2;
     }
-    arr.slice(2);
 
-    // console.log(vezes);
-    console.log(arr);
+    for (let i = 3; i <= Math.sqrt(number); i += 2) {
+        while(number % i == 0){
+            maxPrime = i;
+            number /= i;
+        }
+    }
+
+    if(number > 2){
+        maxPrime = number;
+    }
+
+    return maxPrime;
+
 }
 
-factorialPrime();
+console.log(factorialPrime(600851475143));
