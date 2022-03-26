@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+
+li{
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.result{
+    background-color: wheat;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}

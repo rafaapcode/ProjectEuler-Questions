@@ -7,4 +7,3 @@ const p4 = require("../Problem 4/script"); // 3
 
 const p7 = require("../Problem 7/script");
 
-p7.primeNum();
