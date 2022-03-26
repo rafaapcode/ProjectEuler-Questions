@@ -7,7 +7,7 @@ function isPalindrome(n) {
     return Number(reversed) === n;
 }
 
-function largestPalindrome(num) {
+module.exports.largestPalindrome = (num) => {
     let highest = 0;
 
     // Encontrando o maior número
@@ -25,7 +25,6 @@ function largestPalindrome(num) {
             }
         }
     }
-    return highest;
+    console.log(highest);
 }
 
-console.log(largestPalindrome(3));

@@ -1,4 +1,4 @@
-function t() {
+module.exports.t = () => {
     let arr = [];
     for (let i = 0; i < 1000; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
@@ -10,7 +10,5 @@ function t() {
         return total + value;
     })
 
-    return sum
+    console.log(sum);
 }
-
-console.log(t());
