@@ -2,7 +2,7 @@ const p1 = document.querySelector(".problem1");
 const r1 = document.querySelector(".r1");
 
 p1.addEventListener("click", () => {
-    r1.innerHTML = `<div class='result1'>${t()}</div>`;
+    r1.innerHTML = `<div class='result2'>${t()}</div>`;
     setTimeout(() => {
         r1.innerHTML = ``;
     }, 10000)

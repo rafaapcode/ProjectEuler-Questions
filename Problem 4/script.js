@@ -1,3 +1,14 @@
+const p4 = document.querySelector(".problem4");
+const r4 = document.querySelector(".r4");
+
+p4.addEventListener("click", () => {
+    r4.innerHTML = `<div class='result4'>${largestPalindrome(3)}</div>`;
+    setTimeout(() => {
+        r4.innerHTML = ``;
+    }, 10000)
+})
+
+
 function isPalindrome(n) {
 
     // Pegando o número ao contrário
@@ -7,7 +18,7 @@ function isPalindrome(n) {
     return Number(reversed) === n;
 }
 
-module.exports.largestPalindrome = (num) => {
+function largestPalindrome(num) {
     let highest = 0;
 
     // Encontrando o maior número
@@ -25,6 +36,6 @@ module.exports.largestPalindrome = (num) => {
             }
         }
     }
-    console.log(highest);
+    return highest;
 }
 

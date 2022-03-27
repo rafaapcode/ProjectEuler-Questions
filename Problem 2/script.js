@@ -1,4 +1,15 @@
-module.exports.fibo = () => {
+const p2 = document.querySelector(".problem2");
+const r2 = document.querySelector(".r2");
+
+p2.addEventListener("click", () => {
+    r2.innerHTML = `<div class='result2'>${fibo()}</div>`;
+    setTimeout(() => {
+        r2.innerHTML = ``;
+    }, 10000)
+})
+
+
+function fibo(){
     let prox = 1;
     let ant = 0;
     let sum = 0;
@@ -19,6 +30,6 @@ module.exports.fibo = () => {
         return value + total;
     })
 
-    console.log(soma);
+    return soma;
 
 }
