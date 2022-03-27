@@ -7,7 +7,7 @@
 .container{
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(66, 65, 65);
     display: flex;
     justify-content: center;
 }
@@ -19,9 +19,32 @@ li{
     letter-spacing: 3px;
 }
 
-.result{
-    background-color: wheat;
+
+.result1{
+    background-color: rgba(228, 223, 213, 0.2);
+    border: 2px solid black;
     height: 50px;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
+
+button{
+    width: 150px;
+    letter-spacing: 2px;
+    padding: 2px;
+    border: none;
+    outline: none;
+    background-color: darkgray;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+
