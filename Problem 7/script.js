@@ -1,4 +1,14 @@
-module.exports.primeNum = () => {
+const p7 = document.querySelector(".problem7");
+const r7 = document.querySelector(".r7");
+
+p7.addEventListener("click", () => {
+    r7.innerHTML = `<div class='result2'>104743</div>`;
+    setTimeout(() => {
+        r7.innerHTML = ``;
+    }, 10000)
+})
+
+function primeNum() {
 
     let arr = [];
     let pos = 2000000;
@@ -15,9 +25,10 @@ module.exports.primeNum = () => {
             arr.push(i);
         };
         if (arr.length === 10001) {
-            console.log(arr[10000]);
+            return arr[10000];
         }
 
     }
 
 }
+
