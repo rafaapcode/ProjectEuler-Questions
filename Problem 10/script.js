@@ -1,11 +1,11 @@
 function primeNum() {
 
     let arr = [];
-    let pos = 100000;
+    let pos = 1999999;
 
-    for (let i = 2; i <= pos; i++) {
+    for (let i = 0; i <= pos; i++) {
         let ehprimo = true;
-        for (let d = 2; d < i; d++) {
+        for (let d = 0; d < i; d++) {
             if (i % d === 0) {
                 ehprimo = false;
             }
